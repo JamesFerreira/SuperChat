@@ -10,7 +10,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
 firebase.initializeApp({
-  apiKey: "AIzaSyA8ybayc6aaMmcv2SndZN13G80EEL7Kwns",
+    apiKey: "AIzaSyA8ybayc6aaMmcv2SndZN13G80EEL7Kwns",
     authDomain: "superchat-3696f.firebaseapp.com",
     databaseURL: "https://superchat-3696f.firebaseio.com",
     projectId: "superchat-3696f",
@@ -22,7 +22,6 @@ firebase.initializeApp({
 
 const auth = firebase.auth();
 const firestore = firebase.firestore();
-const analytics = firebase.analytics();
 
 
 function App() {
@@ -120,7 +119,7 @@ function ChatMessage(props) {
 
   return (<>
     <div className={`message ${messageClass}`}>
-      <img src={photoURL || 'https://api.adorable.io/avatars/23/abott@adorable.png'} />
+      <img alt="pp" src={photoURL || 'https://api.adorable.io/avatars/23/abott@adorable.png'} />
       <p>{text}</p>
     </div>
   </>)
